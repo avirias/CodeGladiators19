@@ -1,12 +1,12 @@
-def cal(villans,players):
-    villans = [int(x) for x in villans]
+def cal(villains, players):
+    villains = [int(x) for x in villains]
     players = [int(x) for x in players]
-    villans.sort()
+    villains.sort()
     players.sort()
 
     isDefeated = True
-    for i in range(len(villans)):
-        if players[i] < villans[i]:
+    for i in range(len(villains)):
+        if players[i] < villains[i]:
             isDefeated = False
 
     if isDefeated:
